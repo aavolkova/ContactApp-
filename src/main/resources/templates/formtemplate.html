@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Person Form</title>
+
+
+    <!-- Theme CSS -->
+    <link href="css/CSSformtemplate.css" rel="stylesheet">
+    <link href="CSSformtemplate.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+    <form id="contact" action="" method="post">
+        <h3>Quick Contact</h3>
+        <h4>Contact us today, and get reply with in 24 hours!</h4>
+        <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+    </form>
+
+
+</div>
+
+
+</body>
+</html>
+
+<!--==========================================================-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="www.thymeleaf.org">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8" />-->
+    <!--<title>Person Form</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<form action="#"-->
+      <!--th:action="@{/process}"-->
+      <!--th:object="${person}"-->
+      <!--method="post">-->
+    <!--<input type="hidden" th:field="*{id}" />-->
+    <!--First Name :<input type="text" th:field="*{firstName}" />-->
+    <!--<span th:if="${#fields.hasErrors('firstName')}"-->
+          <!--th:errors="*{firstName}"></span><br />-->
+
+    <!--Last Name :<input type="text" th:field="*{lastName}" />-->
+    <!--<span th:if="${#fields.hasErrors('lastName')}"-->
+          <!--th:errors="*{lastName}"></span><br />-->
+
+    <!--Email Address :<input type="text" th:field="*{emailAddress}" />-->
+    <!--<span th:if="${#fields.hasErrors('emailAddress')}"-->
+          <!--th:errors="*{emailAddress}"></span><br />-->
+
+    <!--Phone Number :<input type="number" th:field="*{phoneNumber}" />-->
+    <!--<span th:if="${#fields.hasErrors('phoneNumber')}"-->
+          <!--th:errors="*{phoneNumber}"></span><br />-->
+
+
+
+    <!--<br />-->
+    <!--<input type="submit" value="Submit" />-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
